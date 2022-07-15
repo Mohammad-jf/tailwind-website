@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className='flex items-center'>
           <h1 className='text-3xl font-bold mx-4 sm:text-4xl'>Brand</h1>
 
-          <ul className=' hidden md:flex menu-items'>
+          <ul className='hidden md:flex menu-items'>
             <li>Home</li>
             <li>About</li>
             <li>Support</li>
@@ -39,16 +39,17 @@ const Navbar = () => {
 
       {/* drop down menu */}
       <ul className={navOpen ? 'absolute bg-zinc-200 w-full px-8 ' : 'hidden'}>
-          <li className='border-b-2 border-zinc-300 w-full'>Home</li>
-          <li className='border-b-2 border-zinc-300 w-full'>About</li>
-          <li className='border-b-2 border-zinc-300 w-full'>Support</li>
-          <li className='border-b-2 border-zinc-300 w-full'>Platforms</li>
-          <li className='border-b-2 border-zinc-300 w-full'>Pricing</li>
+        <li className='border-b-2 border-zinc-300 w-full'>Home</li>
+        <li className='border-b-2 border-zinc-300 w-full'>About</li>
+        <li className='border-b-2 border-zinc-300 w-full'>Support</li>
+        <li className='border-b-2 border-zinc-300 w-full'>Platforms</li>
+        <li className='border-b-2 border-zinc-300 w-full'>Pricing</li>
 
-          <div className='flex flex-col my-3 '>
-            <button className=' border-indigo-600 bg-transparent text-black py-4'>Sign In</button>
-            <button className='mt-5 py-4'>Sign Up </button>
-          </div>
+        <div className='flex flex-col my-3 '>
+          <button className=' border-indigo-600 bg-transparent
+              text-black py-4 hover:border-indigo-200'>Sign In</button>
+          <button className='mt-5 py-4'>Sign Up </button>
+        </div>
       </ul>
 
     </div>
